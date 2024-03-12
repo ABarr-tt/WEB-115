@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+}
+
+main {
+    flex: 1;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    max-width: calc(50% - 20px);
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0; 
+}
+
+aside {
+    flex: 1;
+    width: 25%;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+button {
+    margin-top: auto; 
+}
+
+.search-form {
+    margin-top: 20px;
+}
+
+.search-form input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-form button {
+    width: 28%;
+    padding: 8px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
