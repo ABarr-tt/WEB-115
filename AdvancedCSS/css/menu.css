@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+    font-family: 'Garamond', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f1e3;
+}
+
+header {
+    font-family: 'Playfair Display', serif;
+    background-color: #5d432c;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    color: #f7f1e3;
+}
+
+nav{
+    font-family: 'Garamond', serif;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #5d432c;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Menu Page Specific Styles */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.menu-item {
+    text-align: center;
+    background-color: #dbc6a7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item h2 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 10px;
+    color: #5d432c;
+}
+
+.menu-item p {
+    color: #7a6c5b;
+}
