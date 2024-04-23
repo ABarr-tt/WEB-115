@@ -45,35 +45,35 @@
     font-size: 3em;
 }
 
-.block-collection figure img {
-    display: block;
-    width: 450px;
-    height: auto;
-    border-radius: 15px;
-    margin-bottom: 1.25em;
-}
-
-.block-collection figure figcaption {
-    display: block;
-    text-align: center;
-    font-size: 1.5em;
-    background: tan;
-    padding: 1.25em;
-    border-radius: 15px;
-}
-
-.block-collection figure {
-    margin: 0px 15px 0px auto;  /* top right bottom left*/
-    display: inline-block;
-    padding: 1.25em;
-    background: brown;
-    border-radius: 15px;
-}
-
 .block-collection {
     width: 65%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1.25em;
+
+    figure {
+        margin: 0px 15px 0px auto;  /* top right bottom left*/
+        display: inline-block;
+        padding: 1.25em;
+        background: brown;
+        border-radius: 15px;
+
+        img {
+            display: block;
+            width: 450px;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 1.25em;
+        }
+
+        figcaption {
+            display: block;
+            text-align: center;
+            font-size: 1.5em;
+            background: tan;
+            padding: 1.25em;
+            border-radius: 15px;
+        }
+    }
 }
