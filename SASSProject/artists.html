@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artists</title>
+    <link rel="stylesheet" href="CSS/artists.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="combined-header">
+        <div class="buttons">
+            <a href="home.html" class="button">Home</a>
+            <a href="about.html" class="button">About</a>
+        </div>
+        <h1 class="centered-header">Ukiyo-e</h1>
+    </header>
+    
+    <div class="main-content">
+        <div id="slide">
+            <div class="slide-header">
+                <h1>Utagawa Kuniyoshi</h1>
+                <button id="slide-btn1">Slide</button>
+            </div>
+            <p id="paragraph1">Utagawa Kuniyoshi, a towering figure in the world of ukiyo-e, left an indelible mark on Japanese art with his
+                 dynamic and imaginative prints. Active during the first half of the 19th century, Kuniyoshi's prolific output spanned a
+                  diverse range of subjects, from traditional landscapes and kabuki actors to mythical creatures and legendary warriors.
+                   His bold compositions, characterized by dynamic poses, exaggerated expressions, and intricate details, exude a sense
+                    of energy and vitality that captivates viewers. Kuniyoshi's masterful use of color and line, coupled with his unparalleled
+                     storytelling ability, established him as one of the foremost ukiyo-e artists of his time. His series such as "One Hundred
+                      and Eight Heroes of the Popular Water Margin" and "Fifty-three Stations of the Tōkaidō" showcase his versatility and
+                       artistic vision, cementing his legacy as a visionary artist whose influence continues to resonate in contemporary art.</p>
+            <img src="images/kuniyoshi1.jpg" alt="Kuniyoshi Ghoul" id="image1">
+            <img src="images/kuniyoshi2.jpg" alt="Great strike" id="image2">
+            <img src="images/kuniyoshi3.jpg" alt="Torii Gate" id="image3">
+            <p id="paragraph2">click an image to see full resolution</p>
+        </div>
+        <div id="slide2">
+            <div class="slide-header">
+                <h1>Hokusai</h1>
+                <button id="slide-btn2">Slide</button>
+            </div>
+            <p id="paragraph3">
+                Katsushika Hokusai, often regarded as one of Japan's most iconic and influential artists, forever transformed the landscape of
+                 ukiyo-e with his unparalleled creativity and mastery of the medium. Born in the late 18th century, Hokusai's artistic career
+                  spanned over seven decades, during which he produced an astonishing array of works encompassing landscapes, nature studies,
+                   and supernatural beings. His most renowned masterpiece, "Thirty-Six Views of Mount Fuji," includes the iconic print "The
+                    Great Wave off Kanagawa," which has become a globally recognized symbol of Japanese art. Hokusai's artistic genius lay not
+                     only in his technical skill but also in his boundless imagination and relentless pursuit of innovation. His artistic vision
+                      extended beyond traditional boundaries, influencing countless artists both in Japan and abroad. Even in his later years,
+                       Hokusai remained dedicated to his craft, famously remarking, "At ninety, I shall penetrate the mystery of things."
+                        Through his timeless creations, Hokusai's legacy endures as a testament to the power of art to transcend time and
+                         culture.</p>
+            <img src="images/hokusai1.jpeg" alt="woman" id="image4">
+            <img src="images/hokusai2.jpg" alt="Great Wave" id="image5">
+            <img src="images/hokusai3.jpg" alt="Crane" id="image6">
+            <p id="paragraph4">click an image to see full resolution</p>
+        </div>
+        <div id="slide3">
+            <div class="slide-header">
+                <h1>Horishige</h1>
+                <button id="slide-btn3">Slide</button>
+            </div>
+            <p id="paragraph5">Utagawa Hiroshige, often referred to simply as Hiroshige, stands as one of the most celebrated artists in the
+                 rich tapestry of ukiyo-e tradition. Active during the early to mid-19th century, Hiroshige's evocative landscapes and
+                  depictions of everyday life captured the hearts of audiences both in Japan and beyond. Renowned for his mastery of composition
+                   and atmospheric perspective, Hiroshige's prints transport viewers to serene landscapes, bustling city streets, and picturesque
+                    vistas. His series such as "Fifty-three Stations of the Tōkaidō" and "One Hundred Famous Views of Edo" showcase his unparalleled
+                     ability to infuse scenes with a sense of mood and emotion. Hiroshige's influence extended far beyond his lifetime, with his
+                      works inspiring generations of artists, including the Impressionists in Europe. Through his timeless artistry, Hiroshige
+                       continues to be revered as a visionary whose legacy resonates across cultures and epochs.</p>
+            <img src="images/horishige1.jpg" alt="landscape" id="image7">
+            <img src="images/horishige2.jpg" alt="falcon" id="image8">
+            <img src="images/horishige3.jpg" alt="cityscape" id="image9">
+            <p id="paragraph6">click an image to see full resolution</p>
+        </div>
+        <div id="slide4">
+            <div class="slide-header">
+                <h1>Tsukioka Yoshitoshi</h1>
+                <button id="slide-btn4">Slide</button>
+            </div>
+            <p id="paragraph7">Tsukioka Yoshitoshi, a towering figure in the realm of Japanese woodblock prints, carved a distinct niche in the annals of ukiyo-e with his dynamic and emotionally charged compositions. Active during the tumultuous transition from the Edo period to the Meiji era, Yoshitoshi's artistry navigated themes ranging from historical events and legends to gruesome tales of violence and horror. His prints often depicted dramatic scenes with intense expressions, intricate details, and bold use of color and line. Yoshitoshi's series such as "One Hundred Aspects of the Moon" and "Thirty-two Aspects of Customs and Manners" showcase his technical prowess and narrative depth, capturing the essence of human emotion and experience. Despite facing personal struggles and the decline of traditional woodblock printing, Yoshitoshi's relentless dedication to his craft earned him recognition as the last great master of ukiyo-e. His enduring legacy continues to inspire admiration and fascination, as his prints remain cherished treasures in the world of Japanese art.</p>
+            <img src="images/tsukioka1.jpg" alt="benkei" id="image10">
+            <img src="images/tsukioka2.jpg" alt="whitsle" id="image11">
+            <img src="images/tsukioka3.jpg" alt="warrior" id="image12">
+            <p id="paragraph8">click an image to see full resolution</p>
+        </div>
+    </div>
+
+    <div id="popup-container"></div>
+
+    <script>
+        $(document).ready(function() {
+            // Add click event listener to each image
+            $("#image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8, #image9, #image10, #image11, #image12").click(function() {
+                // Get the source and alt attributes of the clicked image
+                var src = $(this).attr("src");
+                var alt = $(this).attr("alt");
+                
+                // Create a popup window with the full resolution of clicked image
+                var popupContent = `
+                    <div id="popup">
+                        <div id="popup-content">
+                            <img src="${src}" alt="${alt}" id="popup-image">
+                            <button id="close-popup">Close</button>
+                        </div>
+                    </div>
+                `;
+                
+                // Append the popup window to the popup container
+                $("#popup-container").html(popupContent);
+                
+                $("#close-popup").click(function() {
+                    $("#popup-container").empty();
+                });
+            });
+//all this next part is just buttons for slides
+
+            var slideToggleState = true;
+            $("#slide-btn1").click(function(){
+                if (slideToggleState) {
+                    $("#paragraph1").slideDown();
+                    $("#paragraph2").slideDown();
+                    $("#image1").slideDown();
+                    $("#image2").slideDown();
+                    $("#image3").slideDown();
+                } else {
+                    $("#paragraph1").slideUp();
+                    $("#paragraph2").slideUp();
+                    $("#image1").slideUp();
+                    $("#image2").slideUp();
+                    $("#image3").slideUp();
+                }
+            slideToggleState = !slideToggleState;
+            });
+
+            var slideToggleState = true;
+            $("#slide-btn2").click(function(){
+                if (slideToggleState) {
+                    $("#paragraph3").slideDown();
+                    $("#paragraph4").slideDown();
+                    $("#image4").slideDown();
+                    $("#image5").slideDown();
+                    $("#image6").slideDown();
+                }
+                    
+                 else {
+                    $("#paragraph3").slideUp();
+                    $("#paragraph4").slideUp();
+                    $("#image4").slideUp();
+                    $("#image5").slideUp();
+                    $("#image6").slideUp();
+                 }
+                   
+                slideToggleState = !slideToggleState;
+            });
+            var slideToggleState = true;
+            $("#slide-btn3").click(function(){
+                if (slideToggleState) {
+                    $("#paragraph5").slideDown();
+                    $("#paragraph6").slideDown();
+                    $("#image7").slideDown();
+                    $("#image8").slideDown();
+                    $("#image9").slideDown();
+                }
+                    
+                 else {
+                    $("#paragraph5").slideUp();
+                    $("#paragraph6").slideUp();
+                    $("#image7").slideUp();
+                    $("#image8").slideUp();
+                    $("#image9").slideUp();
+                 }
+                   
+                slideToggleState = !slideToggleState;
+            });
+            var slideToggleState = true;
+            $("#slide-btn4").click(function(){
+                if (slideToggleState) {
+                    $("#paragraph7").slideDown();
+                    $("#paragraph8").slideDown();
+                    $("#image10").slideDown();
+                    $("#image11").slideDown();
+                    $("#image12").slideDown();
+                }
+                    
+                 else {
+                    $("#paragraph7").slideUp();
+                    $("#paragraph8").slideUp();
+                    $("#image10").slideUp();
+                    $("#image11").slideUp();
+                    $("#image12").slideUp();
+                 }
+                   
+                slideToggleState = !slideToggleState;
+            });
+        });
+    </script>
+    <footer>
+        Aidan Barrett 2024
+    </footer>
+</body>
+</html>

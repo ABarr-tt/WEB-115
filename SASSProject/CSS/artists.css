@@ -1,0 +1,84 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.combined-header {
+    background-color: #93E9BE;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons .button {
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.buttons .button:hover {
+    background-color: gray;
+}
+
+.centered-header {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+.main-content {
+    padding: 20px;
+}
+
+
+.new-content {
+    width: 100%;
+}
+
+#slide, #slide2, #slide3, #slide4 {
+    background-color: #93E9BE;
+    padding: 20px;
+    text-align: center;
+}
+
+.slide-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.slide-header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.slide-header #slide-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.slide-header #slide-btn:hover {
+    background-color: #0056b3;
+}
+
+#image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8, #image9, #image10, #image11, #image12 {
+    width: 300px;
+    height: 300px;
+    margin-right: 10px;
+}
